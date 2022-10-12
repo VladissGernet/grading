@@ -123,6 +123,18 @@ body {
   margin: 14px 3px 0 28px;
   padding-left: 30px;
   max-width: 174px;
+  position: relative;
+}
+
+.store-number::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("/images/header/number-icon.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 6px;
 }
 
 /*Строка с логотипом*/
@@ -230,6 +242,11 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+}
+
+.navigation-item {
+  padding: 24px 26px 21px 26px;
+  background-color: #32425c;
 }
 
 .navigation-link-button {
