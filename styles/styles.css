@@ -72,7 +72,7 @@ body {
 }
 
 /* Центровка страницы */
-.page-container {
+.page-centerer {
   width: 1170px;
   margin: 0 auto;
   padding-left: 115px;
@@ -80,10 +80,23 @@ body {
 }
 
 /*Header*/
+.store-contacts {
+  background-color: #f3f7f9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-header-container {
+  display: flex;
+  flex-shrink: 0;
+}
+
 .store-description {
   font-size: 14px;
   line-height: 18px;
   color: #ee3643;
+  margin-left: 2px;
+  margin-right: 10px;
 }
 
 .store-location {
@@ -91,6 +104,8 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #32425c;
+  margin-top: 13px;
+  max-width: 275px;
 }
 
 .store-number {
@@ -99,6 +114,10 @@ body {
   line-height: 18px;
   color: #293449;
   text-decoration: none;
+  letter-spacing: 2px;
+  margin: 14px 3px 0 28px;
+  padding-left: 30px;
+  max-width: 174px;
 }
 
 .search-field {
