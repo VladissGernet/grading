@@ -8,12 +8,80 @@
 </head>
 
 <body>
+<!-- Центровка страницы -->
+<div class="page-container">
 
-<header class="page-container">
+  <!-- Шапка -->
+  <header class="main-header">
+    <address class="store-contacts">
+      <p class="store-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p class="store-location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <a class="store-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+    </address>
 
-</header>
+<!--    Лого-->
+    <a class="navigation-logo" href="#">
+      <img class="logo" src="" width="220" height="50" alt="Логотип сайта.">
+    </a>
 
-<main class="main-container main-index">
-</main>
+<!--    Строка поиска в хедере-->
+    <div class="search-container">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="search-field">Поиск.</label>
+        <input class="search-field" placeholder="Поиск" value="Текст поиска" type="text" name="search-field" id="search-field" required>
+      </form>
+      <button class="search-button" type="submit">
+        Найти
+      </button>
+    </div>
+
+    <button class="user-button login-button" type="button">Войти</button>
+
+<!--    Навигация-->
+    <nav class="header-navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link-button" href="#">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-button" href="#">Компания</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-button" href="#">Каталог</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-button" href="#">Новости</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-button" href="#">Спецпредложения</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-button" href="#">Доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-button" href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="navigation-user">
+        <li class="navigation-user-item">
+          <a class="navigation-user-icon" href="#">
+            <span class="visually-hidden">Избранное.</span>
+          </a>
+        </li>
+        <li class="navigation-user-item">
+          <a class="navigation-user-icon" href="#">
+            <span class="visually-hidden">Корзина товаров.</span>
+          </a>
+        </li>
+      </ul>
+      <button class="navigation-user-button" type="submit">Оформить заказ</button>
+    </nav>
+  </header>
+
+  <main class="main-container main-index">
+  </main>
+
+</div>
 
 </body>
