@@ -2,7 +2,9 @@
     font-family: "Fira Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/firasans-bold-700.woff2") format("woff2");
+    src:
+            url("../fonts/firasans-bold-700.woff2") format("woff2"),
+            url("../fonts/firasans-bold-700.woff") format("woff");
     font-display: swap;
 }
 
@@ -10,7 +12,9 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/ptsans-regular-400.woff2") format("woff2");
+    src:
+            url("../fonts/ptsans-regular-400.woff2") format("woff2"),
+            url("../fonts/ptsans-regular-400.woff") format("woff");
     font-display: swap;
 }
 
@@ -18,7 +22,9 @@
     font-family: "PT Sans";
     font-style: italic;
     font-weight: 400;
-    src: url("../fonts/ptsans-italic-400.woff2") format("woff2");
+    src:
+            url("../fonts/ptsans-italic-400.woff2") format("woff2"),
+            url("../fonts/ptsans-italic-400.woff") format("woff");
     font-display: swap;
 }
 
@@ -26,7 +32,9 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/ptsans-bold-700.woff2") format("woff2");
+    src:
+            url("../fonts/ptsans-bold-700.woff2") format("woff2"),
+            url("../fonts/ptsans-bold-700.woff") format("woff");
     font-display: swap;
 }
 
@@ -74,3 +82,4 @@ body {
     padding-left: 115px;
     padding-right: 115px;
 }
+
