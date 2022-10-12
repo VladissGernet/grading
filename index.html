@@ -21,20 +21,29 @@
       </address>
     </div>
 
-<!--    Лого-->
-    <a class="navigation-logo" href="#">
-      <img class="logo" src="" width="220" height="50" alt="Логотип сайта.">
-    </a>
+<!--    Строка с логотипом-->
+    <div class="logo-background">
 
-<!--    Строка поиска в хедере-->
-    <div class="search-container">
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="search-field">Поиск.</label>
-        <input class="search-field" placeholder="Поиск" type="text" name="search-field" id="search-field" required>
-      </form>
+      <!--    Лого-->
+      <div class="header-user-container page-centerer">
+
+        <a class="navigation-logo" href="#">
+          <img class="logo" src="images/logo.svg" width="108" height="18" alt="Логотип сайта.">
+        </a>
+
+        <!--    Строка поиска в хедере-->
+        <div class="search-container">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="search-field">Поиск.</label>
+            <input class="search-field" placeholder="Поиск" type="text" name="search-field" id="search-field" required>
+          </form>
+        </div>
+
+        <button class="general-button login-button" type="button">Войти</button>
+
+      </div>
+
     </div>
-
-    <button class="general-button login-button" type="button">Войти</button>
 
 <!--    Навигация-->
     <nav class="header-navigation">

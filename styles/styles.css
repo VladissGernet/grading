@@ -82,6 +82,7 @@ body {
 /*Header*/
 .store-contacts-background {
   background-color: #f3f7f9;
+  margin-bottom: -1px;
 }
 
 .store-contacts {
@@ -107,7 +108,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #32425c;
-  margin-top: 13px;
+  margin: 13px 0 0;
   max-width: 275px;
 }
 
@@ -121,6 +122,30 @@ body {
   margin: 14px 3px 0 28px;
   padding-left: 30px;
   max-width: 174px;
+}
+
+/*Строка с логотипом*/
+.logo-background {
+  background-color: #293449;
+}
+
+.navigation-logo {
+  display: flex;
+  width: 219px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  margin-bottom: -5px;
+}
+
+.navigation-logo img {
+  transform: translate(-1px, -4px);
+}
+
+.header-user-container {
+  display: flex;
 }
 
 .search-field {
