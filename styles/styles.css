@@ -79,3 +79,66 @@ body {
   padding-right: 115px;
 }
 
+/*Header*/
+.store-description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ee3643;
+}
+
+.store-location {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+}
+
+.store-number {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  color: #293449;
+  text-decoration: none;
+}
+
+.search-field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.search-field::placeholder {
+  color: #ffffff;
+}
+
+/*Общая кнопка*/
+.general-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.login-button {
+  color: #f1f5f7;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-link-button {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
