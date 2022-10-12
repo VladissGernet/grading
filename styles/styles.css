@@ -30,6 +30,41 @@
     font-display: swap;
 }
 
-.test {
-    font-family: "PT Sans", serif;
+html {
+    height: 100%;
 }
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #565c66;
+}
+
+/*Для паттерна Sticky footer*/
+.main-container {
+    flex-grow: 1;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Центровка страницы */
