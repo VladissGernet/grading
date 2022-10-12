@@ -68,3 +68,9 @@ body {
 }
 
 /* Центровка страницы */
+.page-container {
+    width: 1170px;
+    margin: 0 auto;
+    padding-left: 115px;
+    padding-right: 115px;
+}
