@@ -169,6 +169,18 @@ body {
 
 .search-form {
   height: 100%;
+  position: relative;
+}
+
+.search-form::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("/images/header/search.svg");
+  background-repeat: no-repeat;
+  top: 11px;
+  left: 21px;
 }
 
 .search-field::placeholder {
