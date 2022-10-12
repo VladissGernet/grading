@@ -80,8 +80,11 @@ body {
 }
 
 /*Header*/
-.store-contacts {
+.store-contacts-background {
   background-color: #f3f7f9;
+}
+
+.store-contacts {
   display: flex;
   justify-content: space-between;
 }
