@@ -44,11 +44,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    font-family: "Inter", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22px;
-    color: #565c66;
+    line-height: 24px;
+    color: #293449;
 }
 
 /*Для паттерна Sticky footer*/
