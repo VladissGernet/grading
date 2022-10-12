@@ -91,7 +91,8 @@ body {
 }
 
 .right-header-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 275px 235px;
   flex-shrink: 0;
 }
 
@@ -219,10 +220,16 @@ body {
   left: 0;
 }
 
+/*Навигация*/
+.navigation-background {
+  background-color: #3d546f;
+}
+
 .navigation-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
 }
 
 .navigation-link-button {
