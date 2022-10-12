@@ -161,7 +161,7 @@ body {
   line-height: 24px;
   border: none;
   width: 100%;
-  height: 100%;
+  height: 45px;
   box-sizing: border-box;
   padding: 0 0 4px 53px;
   background-color: transparent;
@@ -196,10 +196,27 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .login-button {
   color: #f1f5f7;
+  background-color: transparent;
+  position: relative;
+  padding: 2px 2px 0 27px;
+  max-width: 100px;
+}
+
+.login-button::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("/images/header/login.svg");
+  background-repeat: no-repeat;
+  left: 0;
 }
 
 .navigation-list {
