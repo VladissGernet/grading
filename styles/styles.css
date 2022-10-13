@@ -341,6 +341,7 @@ body {
   right: 4px;
 }
 
+/*Разные цвета фона карточек*/
 .card-item:nth-child(2) {
   background-color: #3bbce3;
 }
@@ -353,11 +354,6 @@ body {
   background-color: #8ed78f;
 }
 
-/*Подгон для Pixel Perfect*/
-.card-item:nth-child(2) .card-button {
-  padding: 11px 16px 9px 27px;
-}
-
 .card-title {
   margin: 0;
   font-size: 24px;
@@ -368,12 +364,13 @@ body {
 
 .card-button {
   margin: 57px 0 12px;
-  padding: 10px 16px 10px 33px;
+  padding: 11px 12px 9px 32px;
   border: 1px solid #f9f5f0;
   background-color: transparent;
   box-sizing: border-box;
   min-width: 180px;
   position: relative;
+  text-align: start;
 }
 
 .card-button::before {
