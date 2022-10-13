@@ -395,4 +395,31 @@ body {
   background-repeat: no-repeat;
   background-size: 910px 390px;
   background-position: -70px;
+  position: relative;
 }
+
+/*Кнопки слайдера*/
+.slider-controls {
+  width: calc(100% - 37px);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 44.5%;
+  left: 20px;
+}
+
+.slider-button {
+  border: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/main/cards/slider/slider-arrow.svg");
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider-button:last-child {
+  transform: rotate(180deg);
+}
+
+
