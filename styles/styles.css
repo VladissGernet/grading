@@ -371,6 +371,8 @@ body {
   min-width: 180px;
   position: relative;
   text-align: start;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .card-button::before {
