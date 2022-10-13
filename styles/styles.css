@@ -329,7 +329,7 @@ body {
 .new-item::before {
   position: absolute;
   content: "new";
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -387,6 +387,11 @@ body {
 }
 
 /*Слайдер*/
+.slider {
+  padding: 0;
+  list-style-type: none;
+}
+
 .slider-item {
   grid-column: 1 / span 2;
   grid-row: 2 / span 2;
@@ -395,6 +400,22 @@ body {
   background-size: 910px 390px;
   background-position: -70px;
   position: relative;
+}
+
+.inner-card-title {
+  font-family: "Fira Sans",sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 30px 0 11px 26px;
+}
+
+.slider-description {
+  margin: 0 0 0 26px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
 }
 
 /*Кнопки слайдера*/
@@ -421,4 +442,18 @@ body {
   transform: rotate(180deg);
 }
 
+/*Общая красная кнопка*/
+.red-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
 
+.inner-slider-button {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+}
