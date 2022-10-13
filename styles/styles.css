@@ -239,20 +239,42 @@ body {
 }
 
 .navigation-list {
-  margin: 0;
+  margin: 0 0 0 -18px;
   padding: 0;
   list-style-type: none;
   display: flex;
 }
 
-.navigation-item {
-  padding: 24px 26px 21px 26px;
-  background-color: #32425c;
+/*Для соответствия PixelPerfect*/
+.navigation-item:first-child {
+  margin-right: 9px;
+}
+
+.navigation-item:nth-child(2) {
+  margin-right: 5px;
+}
+
+.navigation-item:nth-child(3) {
+  margin-right: 8px;
+}
+
+.navigation-item:nth-child(4) {
+  margin-right: 3px;
+}
+
+.navigation-item:nth-child(5) {
+  margin-right: 2px;
+}
+
+.navigation-item:nth-child(6) {
+  margin-right: 6px;
 }
 
 .navigation-link-button {
+  display: block;
   text-decoration: none;
   color: #ffffff;
+  padding: 20px 22px 21px;
 }
 
 .navigation-user {
