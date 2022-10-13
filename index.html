@@ -1,19 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Грейдирование</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <title>HTML Academy: Грейдирование</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
 
-<header class="page-container">
+  <!-- Шапка -->
+  <header class="main-header">
+    <div class="store-contacts-background">
+      <address class="store-contacts page-centerer">
+        <p class="store-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <div class="right-header-container">
+          <p class="store-location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="store-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </div>
+      </address>
+    </div>
 
-</header>
+<!--    Строка с логотипом-->
+    <div class="logo-background">
 
-<main class="main-container main-index">
-</main>
+      <!--    Лого-->
+      <div class="header-user-container page-centerer">
+
+        <a class="navigation-logo" href="#">
+          <img class="logo" src="images/logo.svg" width="108" height="18" alt="Логотип сайта.">
+        </a>
+
+        <!--    Строка поиска в хедере-->
+        <div class="search-container">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="search-field">Поиск.</label>
+            <input class="search-field" placeholder="Поиск:" type="text" name="search-field" id="search-field" required>
+          </form>
+        </div>
+
+        <button class="general-button login-button" type="button">Войти</button>
+
+      </div>
+
+    </div>
+
+<!--    Навигация-->
+    <div class="navigation-background">
+      <nav class="header-navigation page-centerer">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link-button" href="#">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-button" href="#">Компания</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-button" href="#">Каталог</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-button" href="#">Новости</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-button" href="#">Спецпредложения</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-button" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-button" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-icon" href="#">
+              <span class="visually-hidden">Избранное.</span>
+              <svg width="14" height="19" fill="none" fill-opacity="0.7" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m.8 18.386 6.3-3.056 6.3 3.056V2.131c0-.965-.806-1.747-1.8-1.747h-9c-.994 0-1.8.782-1.8 1.747v16.253Zm6.3-5.008L2.6 15.56V2.132h9V15.56l-4.5-2.182Z" fill="#fff"/></svg>
+            </a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-icon" href="#">
+              <svg width="18" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.651 2.1878a1.9776 1.9776 0 0 0-.4587.0521c-.2-.4424-.4641-.8393-.7646-1.1408C1.9177.5873 1.1134.3855 0 .3855v1.8c.6802 0 1.0716.0982 1.1595.1864.339.3402.634 1.0313.634 1.6136l.009.1273.8788 6.1732C1.211 10.3625.072 11.5084.0011 12.9409L0 13.8855c.0868 1.4795 1.2221 2.6177 2.6395 2.6985l.2035.0004c.369 1.0492 1.3659 1.8011 2.5377 1.8011 1.1714 0 2.168-.7513 2.5373-1.8h2.0997c.3694 1.0487 1.3659 1.8 2.5373 1.8 1.4858 0 2.6904-1.2088 2.6904-2.7s-1.2046-2.7-2.6904-2.7c-1.1714 0-2.1679.7513-2.5373 1.8H7.918c-.3693-1.0487-1.3659-1.8-2.5373-1.8-1.1714 0-2.168.7513-2.5373 1.8h-.153c-.4574-.0276-.8676-.4388-.8984-.9539l.0016-.8461c.0241-.4668.4316-.8757.9412-.9011l1.7704.0004.0128.0007h9.0386l.1323-.0422a2.3572 2.3572 0 0 0 1.482-1.3955l.0945-.1877.307-.6103c.3175-.6318.6351-1.2646.9446-1.8829.758-1.5144 1.2347-2.477 1.3403-2.7132.5421-1.2138-.5561-2.148-1.6787-2.1679L3.651 2.1878Zm9.594 8.0977H4.5852a.1529.1529 0 0 1-.1101-.126l-.8788-6.1733 12.4502.8947c-.2178.4459-.6138 1.2422-1.1323 2.278l-.013.026c-.2959.5913-.613 1.2232-.9302 1.8542l-.3066.6095-.1162.2309-.0437.102a.562.562 0 0 1-.2595.304Zm-.69 6.3c.4953 0 .8968-.4029.8968-.9 0-.4971-.4015-.9-.8968-.9s-.8968.4029-.8968.9c0 .4971.4015.9.8968.9Zm-6.2775-.9c0 .4971-.4015.9-.8968.9s-.8968-.4029-.8968-.9c0-.4971.4015-.9.8968-.9s.8968.4029.8968.9Z" fill="#fff" opacity=".6"/></svg>
+              <span class="visually-hidden">Корзина товаров.</span>
+            </a>
+          </li>
+        </ul>
+
+        <button class="general-button navigation-user-button" type="submit">Оформить заказ</button>
+      </nav>
+    </div>
+
+  </header>
+
+  <main class="main-container main-index">
+  </main>
+
 
 </body>

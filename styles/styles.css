@@ -1,76 +1,305 @@
 @font-face {
-    font-family: "Fira Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/firasans-bold-700.woff2") format("woff2");
-    font-display: swap;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/firasans-bold-700.woff2") format("woff2"),
+       url("../fonts/firasans-bold-700.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ptsans-regular-400.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-regular-400.woff2") format("woff2"),
+       url("../fonts/ptsans-regular-400.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 400;
-    src: url("../fonts/ptsans-italic-400.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ptsans-italic-400.woff2") format("woff2"),
+       url("../fonts/ptsans-italic-400.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ptsans-bold-700.woff2") format("woff2");
-    font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-bold-700.woff2") format("woff2"),
+       url("../fonts/ptsans-bold-700.woff") format("woff");
+  font-display: swap;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 img {
-    max-width: 100%;
-    object-fit: contain;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #293449;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #293449;
 }
 
 /*Для паттерна Sticky footer*/
 .main-container {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Центровка страницы */
-.page-container {
-    width: 1170px;
-    margin: 0 auto;
-    padding-left: 115px;
-    padding-right: 115px;
+.page-centerer {
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 115px;
+  padding-right: 115px;
+}
+
+/*Header*/
+.store-contacts-background {
+  background-color: #f3f7f9;
+  margin-bottom: -1px;
+}
+
+.store-contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-header-container {
+  display: grid;
+  grid-template-columns: 275px 235px;
+  flex-shrink: 0;
+}
+
+.store-description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ee3643;
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.store-location {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  margin: 13px 0 0;
+  max-width: 275px;
+}
+
+.store-number {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  color: #293449;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 14px 3px 0 28px;
+  padding-left: 30px;
+  max-width: 174px;
+  position: relative;
+}
+
+.store-number::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("/images/header/number-icon.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 6px;
+}
+
+/*Строка с логотипом*/
+/*Лого*/
+.logo-background {
+  background-color: #293449;
+}
+
+.navigation-logo {
+  display: flex;
+  width: 219px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  margin-bottom: -5px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.navigation-logo img {
+  transform: translate(-1px, -4px);
+}
+
+.header-user-container {
+  display: flex;
+}
+
+/*Поле поиска*/
+.search-container {
+  flex-grow: 1;
+}
+
+.search-field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  padding: 0 0 4px 53px;
+  background-color: transparent;
+}
+
+.search-form {
+  height: 100%;
+  position: relative;
+}
+
+.search-form::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("/images/header/search.svg");
+  background-repeat: no-repeat;
+  top: 11px;
+  left: 21px;
+}
+
+.search-field::placeholder {
+  color: #ffffff;
+}
+
+/*Общая кнопка*/
+.general-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.login-button {
+  color: #f1f5f7;
+  background-color: transparent;
+  position: relative;
+  padding: 2px 2px 0 27px;
+  max-width: 100px;
+}
+
+.login-button::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("/images/header/login.svg");
+  background-repeat: no-repeat;
+  left: 0;
+}
+
+/*Навигация*/
+.header-navigation {
+  display: grid;
+  grid-template-columns: 820px 178px 174px;
+  align-items: start;
+  justify-items: start;
+  padding-bottom: 4px;
+}
+
+.navigation-background {
+  background-color: #3d546f;
+}
+
+.navigation-list {
+  margin: 0 0 0 -18px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Для соответствия PixelPerfect*/
+.navigation-item:first-child {
+  margin-right: 9px;
+}
+
+.navigation-item:nth-child(2) {
+  margin-right: 5px;
+}
+
+.navigation-item:nth-child(3) {
+  margin-right: 8px;
+}
+
+.navigation-item:nth-child(4) {
+  margin-right: 3px;
+}
+
+.navigation-item:nth-child(5) {
+  margin-right: 2px;
+}
+
+.navigation-item:nth-child(6) {
+  margin-right: 6px;
+}
+
+.navigation-link-button {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px 22px 21px;
+}
+
+.navigation-user {
+  margin: 23px 27px 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-self: end;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navigation-user-button {
+  background-color: #63a63e;
+  border-radius: 4px;
+  margin: 11px 0 12px;
+  padding: 12px 12px;
 }
