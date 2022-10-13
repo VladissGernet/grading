@@ -317,6 +317,20 @@ body {
 .card-item {
   padding: 20px 25px;
   background-color: #ffbf47;
+  background-image:
+    linear-gradient(45deg, rgba(0,0,0,0) 341px, rgba(238,54,67,1) 341px, rgba(238,54,67,1) 371px, rgba(0,212,255,0) 371px)
+  }
+
+.card-item:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.card-item:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.card-item:nth-child(4) {
+  background-color: #8ed78f;
 }
 
 .card-title {
@@ -347,16 +361,3 @@ body {
   background-image: url("/images/main/cards/button-arrow.svg");
   background-repeat: no-repeat;
 }
-
-.card-item:nth-child(2) {
-  background-color: #3bbce3;
-}
-
-.card-item:nth-child(3) {
-  background-color: #dc91d8;
-}
-
-.card-item:nth-child(4) {
-  background-color: #8ed78f;
-}
-
