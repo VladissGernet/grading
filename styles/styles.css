@@ -305,3 +305,58 @@ body {
 }
 
 /*Карточки навигации*/
+.cards-list {
+  margin: 52px 0 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 27px 30px;
+}
+
+.card-item {
+  padding: 20px 25px;
+  background-color: #ffbf47;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.card-button {
+  margin: 57px 0 12px;
+  padding: 10px 16px 10px 33px;
+  border: 1px solid #f9f5f0;
+  background-color: transparent;
+  box-sizing: border-box;
+  min-width: 180px;
+  position: relative;
+}
+
+.card-button::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 11px;
+  background-image: url("/images/main/cards/button-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.card-item:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.card-item:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.card-item:nth-child(4) {
+  background-color: #8ed78f;
+}
+
