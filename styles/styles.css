@@ -239,6 +239,7 @@ body {
   grid-template-columns: 820px 178px 174px;
   align-items: start;
   justify-items: start;
+  padding-bottom: 4px;
 }
 
 .navigation-background {
@@ -250,6 +251,7 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 /*Для соответствия PixelPerfect*/
@@ -291,11 +293,13 @@ body {
   display: flex;
   justify-self: end;
   gap: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .navigation-user-button {
   background-color: #63a63e;
   border-radius: 4px;
-  margin-top: 11px;
+  margin: 11px 0 12px;
   padding: 12px 12px;
 }
