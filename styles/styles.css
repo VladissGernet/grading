@@ -386,3 +386,9 @@ body {
   background-image: url("/images/main/cards/button-arrow.svg");
   background-repeat: no-repeat;
 }
+
+/*Слайдер*/
+.slider-item {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
