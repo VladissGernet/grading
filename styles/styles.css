@@ -311,7 +311,7 @@ body {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 370px);
-  gap: 27px 30px;
+  gap: 29px 30px;
 }
 
 .card-item {
@@ -391,4 +391,8 @@ body {
 .slider-item {
   grid-column: 1 / span 2;
   grid-row: 2 / span 2;
+  background-image: url("../images/main/cards/slider/dreels.jpg");
+  background-repeat: no-repeat;
+  background-size: 910px 390px;
+  background-position: -70px;
 }
