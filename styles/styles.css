@@ -687,8 +687,11 @@ body {
 
 .manufactures-checkbox-container {
   list-style-type: none;
-  margin: 0;
+  margin: 14px 0 0 3px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .control-checkbox {
