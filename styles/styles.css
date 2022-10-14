@@ -574,11 +574,14 @@ body {
 }
 
 /*Стоимость*/
+.catalog-filter fieldset {
+  padding: 0;
+  border: none;
+}
+
 .cost {
   margin: 24px 0 0 -2px;
-  padding: 0;
   width: 200px;
-  border: none;
   display: grid;
   grid-template-columns: repeat(2, 95px);
   gap: 30px;
@@ -631,6 +634,45 @@ body {
 .toggle-max {
   top: -8px;
   right: -10px;
+}
+
+.range-input {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #293449;
+  width: 95px;
+  height: 40px;
+  border: none;
+  background-color: #f7f3ec;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.label-left {
+  position: relative;
+}
+
+.label-left::after {
+  position: absolute;
+  content: "—";
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #293449;
+  top: 6px;
+  right: -23px;
+}
+
+/* Убираем дефолтные стрелки */
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 
