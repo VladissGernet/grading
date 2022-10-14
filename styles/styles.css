@@ -770,8 +770,26 @@ body {
   left: 5px;
 }
 
+/*Кнопка фильтра*/
+.blue-border-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: transparent;
+  border: 2px solid #3d546f;
+  border-radius: 2px;
+  cursor: pointer;
+}
 
-
+.filter-button {
+  margin: 46px 0 0 1px;
+  min-width: 219px;
+  padding: 10px 0 8px;
+}
 
 /*Селектор*/
 .select-control {
