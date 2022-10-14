@@ -490,10 +490,18 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   background-color: #ee3643;
+  padding: 13px 6px 14px;
+  min-width: 194px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
 }
 
 .inner-slider-button {
   text-decoration: none;
-  color: #ffffff;
   display: inline-block;
+  position: absolute;
+  bottom: 46px;
+  left: 52px;
+  z-index: 1;
 }
