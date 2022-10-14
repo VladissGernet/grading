@@ -817,7 +817,4 @@ body {
 /*Результат поиска*/
 .search-result {
   grid-area: result;
-  height: 100%;
-  width: 100%;
-  background-color: #3bbce3;
 }
