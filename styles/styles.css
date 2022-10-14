@@ -539,7 +539,17 @@ body {
 }
 
 /*Каталог*/
+.catalog {
+  display: grid;
+  grid-template-columns: 247px 1fr;
+  grid-template-areas:
+  "title title"
+  "filter selector"
+  "filter result";
+}
+
 .catalog-title {
+  grid-area: title;
   margin: 0;
   font-family: "Fira Sans", sans-serif;
   font-size: 36px;
@@ -549,7 +559,7 @@ body {
 
 /*Фильтр каталога*/
 .catalog-filter {
-
+  grid-area: filter;
 }
 
 /*Стоимость*/
@@ -562,4 +572,15 @@ body {
 
 /*Питание*/
 
+/*Селектор*/
+.select-control {
+  grid-area: selector;
+}
 
+/*Результат поиска*/
+.search-result {
+  grid-area: result;
+  height: 100%;
+  width: 100%;
+  background-color: #3bbce3;
+}
