@@ -578,6 +578,46 @@ body {
   gap: 30px;
 }
 
+.range-scale {
+  height: 2px;
+  background-color: #3d546f;
+  position: relative;
+  grid-column: span 2;
+  margin-top: 28px;
+}
+
+.range-bar {
+  height: 2px;
+  background-color: #5fbb2d;
+  position: absolute;
+}
+
+.range-toggle {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  outline: 2px solid #3d546f;
+  outline-offset: -2px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+
+
+
 /*Производители*/
 
 
