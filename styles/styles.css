@@ -787,7 +787,7 @@ body {
 
 .filter-button {
   margin: 46px 0 0 1px;
-  min-width: 219px;
+  width: 219px;
   padding: 10px 0 8px;
 }
 
