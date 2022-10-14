@@ -537,3 +537,18 @@ body {
 .selected-button-slider {
   background-color: #ffffff;
 }
+
+/*Каталог*/
+.catalog {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  /*grid-template-rows: 70px 1fr;*/
+}
+
+.catalog-title {
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
