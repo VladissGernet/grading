@@ -447,11 +447,12 @@ body {
   line-height: 42px;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 0 11px 26px;
+  margin: 0 0 11px 51px;
+  padding-top: 50px;
 }
 
 .slider-description {
-  margin: 0 0 0 26px;
+  margin: 0 0 0 51px;
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
