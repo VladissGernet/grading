@@ -680,10 +680,44 @@ body {
   margin: 0;
 }
 
-
-
-
 /*Производители*/
+.manufactures {
+  margin: 38px 0 0 -2px;
+}
+
+.manufactures-checkbox-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.control-checkbox {
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  cursor: pointer;
+  padding-left: 35px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3d546f;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
 
 
 /*Питание*/
