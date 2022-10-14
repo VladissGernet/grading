@@ -711,7 +711,16 @@ body {
   box-sizing: border-box;
 }
 
-
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/main/catalog/checkbox-on.svg");
+  background-repeat: no-repeat;
+  content: "";
+  top: -2px;
+  left: -2px;
+}
 
 
 
