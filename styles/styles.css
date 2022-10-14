@@ -506,3 +506,32 @@ body {
   left: 52px;
   z-index: 1;
 }
+
+/*Пагинация слайдера*/
+.slider-pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: absolute;
+  bottom: 17px;
+  left: 47.6%;
+  z-index: 1;
+}
+
+.slider-pagination-button {
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffd180;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.selected-button-slider {
+  background-color: #ffffff;
+}
