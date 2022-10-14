@@ -584,7 +584,7 @@ body {
   width: 200px;
   display: grid;
   grid-template-columns: repeat(2, 95px);
-  gap: 30px;
+  gap: 26px 28px;
 }
 
 .range-scale {
@@ -592,17 +592,17 @@ body {
   height: 2px;
   background-color: #3d546f;
   grid-column: span 2;
-  margin: 28px 20px 0 28px;
+  margin: 28px 16px 0 30px;
 }
 
 .range-scale::before {
   position: absolute;
   content: "";
-  width: calc(100% + 48px);
+  width: calc(100% + 45px);
   height: 40px;
   background-color: #f7f3ec;
   top: -18px;
-  left: -28px;
+  left: -25px;
   z-index: -1;
   border-radius: 4px;
 }
@@ -642,12 +642,17 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #293449;
-  width: 95px;
-  height: 40px;
+  width: 91px;
+  height: 38px;
   border: none;
   background-color: #f7f3ec;
   border-radius: 4px;
   text-align: center;
+  margin-left: 3px;
+}
+
+.range-input::placeholder {
+  color: #293449;
 }
 
 .label-left {
@@ -663,7 +668,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #293449;
-  top: 6px;
+  top: 11px;
   right: -23px;
 }
 
