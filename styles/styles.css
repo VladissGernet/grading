@@ -725,14 +725,53 @@ body {
   left: -2px;
 }
 
-
-
-
-
-
-
-
 /*Питание*/
+.power-supply-radio {
+  margin: 32px 0 0 -1px;
+}
+
+.power-supply-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0 0 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.power-supply-label {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+}
+
+.control-mark-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #3d546f;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.power-supply-input[type="radio"]:checked + .control-mark-radio::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  content: "";
+  background-color: #3d546f;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+
+
 
 /*Селектор*/
 .select-control {
