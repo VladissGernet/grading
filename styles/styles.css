@@ -303,3 +303,237 @@ body {
   margin: 11px 0 12px;
   padding: 12px 12px;
 }
+
+/*Карточки навигации*/
+.cards-list {
+  margin: 52px 0 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 29px 30px;
+  align-items: start;
+}
+
+.card-item {
+  padding: 20px 25px;
+  background-color: #ffbf47;
+  position: relative;
+}
+
+.card-item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: 87% 50%;
+}
+
+/*Декоративная картинка в промоблоках*/
+.card-item:nth-child(1)::after {
+  background-image: url("../images/main/cards/card-icons/icon-materials.svg");
+}
+
+.card-item:nth-child(2)::after {
+  background-image: url("../images/main/cards/card-icons/icon-tool.svg");
+}
+
+.card-item:nth-child(3)::after {
+  background-image: url("../images/main/cards/card-icons/icon-equipment.svg");
+}
+
+.card-item:nth-child(4)::after {
+  background-image: url("../images/main/cards/card-icons/icon-sale.svg");
+}
+
+.card-item:nth-child(5)::after {
+  background-image: url("../images/main/cards/card-icons/icon-delivery.svg");
+}
+
+/*Ярлык новинки*/
+.new-item {
+  position: relative;
+  background-image:
+    linear-gradient(45deg, rgba(0,0,0,0) 88%, rgba(238,54,67,1) 88%, rgba(238,54,67,1) 95.5%, rgba(0,212,255,0) 95.5%)
+}
+
+.new-item::before {
+  position: absolute;
+  content: "new";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transform: rotate(45deg);
+  top: 14px;
+  right: 4px;
+}
+
+/*Разные цвета фона карточек*/
+.card-item:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.card-item:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.card-item:nth-child(4) {
+  background-color: #8ed78f;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.card-button {
+  margin: 57px 0 12px;
+  padding: 11px 12px 9px 32px;
+  border: 1px solid #f9f5f0;
+  background-color: transparent;
+  box-sizing: border-box;
+  min-width: 180px;
+  position: relative;
+  text-align: start;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.card-button::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 11px;
+  left: 11px;
+  background-image: url("/images/main/cards/button-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+/*Слайдер*/
+.slider-item {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+  padding: 0;
+}
+
+.slider {
+  padding: 0;
+  list-style-type: none;
+}
+
+.inner-slider-item {
+  min-height: 390px;
+  background-image: url("../images/main/cards/slider/dreels.jpg");
+  background-repeat: no-repeat;
+  background-size: 910px 390px;
+  background-position: -70px;
+}
+
+
+.inner-card-title {
+  font-family: "Fira Sans",sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 51px 11px;
+  padding-top: 50px;
+}
+
+.slider-description {
+  margin: 0 51px 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/*Кнопки слайдера*/
+.slider-controls {
+  width: calc(100% - 37px);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 44%;
+  left: 20px;
+}
+
+.slider-button {
+  border: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/main/cards/slider/slider-arrow.svg");
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider-button:last-child {
+  transform: rotate(180deg);
+}
+
+/*Общая красная кнопка*/
+.red-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  padding: 13px 6px 14px;
+  min-width: 194px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+}
+
+.inner-slider-button {
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  bottom: 49px;
+  left: 52px;
+  z-index: 1;
+}
+
+/*Пагинация слайдера*/
+.slider-pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 1px;
+  z-index: 1;
+}
+
+.slider-pagination-button {
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffd180;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.selected-button-slider {
+  background-color: #ffffff;
+}
