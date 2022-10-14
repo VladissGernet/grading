@@ -539,12 +539,6 @@ body {
 }
 
 /*Каталог*/
-.catalog {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  /*grid-template-rows: 70px 1fr;*/
-}
-
 .catalog-title {
   margin: 0;
   font-family: "Fira Sans", sans-serif;
@@ -552,3 +546,20 @@ body {
   line-height: 42px;
   text-transform: uppercase;
 }
+
+/*Фильтр каталога*/
+.catalog-filter {
+
+}
+
+/*Стоимость*/
+.cost {
+
+}
+
+/*Производители*/
+
+
+/*Питание*/
+
+
