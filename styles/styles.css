@@ -551,6 +551,8 @@ body {
   "title title"
   "filter selector"
   "filter result";
+  grid-template-rows: auto auto 1fr;
+  justify-items: start;
 }
 
 .catalog-title {
@@ -793,7 +795,23 @@ body {
 
 /*Селектор*/
 .select-control {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #293449;
   grid-area: selector;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #3d546f;
+  border-radius: 2px;
+  min-width: 280px;
+  background-image: url(../images/main/catalog/selcetor-icon.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 17px right 12px;
+  margin: 60px 0 35px 53px;
+  padding: 7px 28px 7px 14px;
 }
 
 /*Результат поиска*/
