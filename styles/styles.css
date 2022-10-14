@@ -317,6 +317,39 @@ body {
 .card-item {
   padding: 20px 25px;
   background-color: #ffbf47;
+  position: relative;
+}
+
+.card-item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: 87% 50%;
+}
+
+/*Декоративная картинка в промоблоках*/
+.card-item:nth-child(1)::after {
+  background-image: url("../images/main/cards/card-icons/icon-materials.svg");
+}
+
+.card-item:nth-child(2)::after {
+  background-image: url("../images/main/cards/card-icons/icon-tool.svg");
+}
+
+.card-item:nth-child(3)::after {
+  background-image: url("../images/main/cards/card-icons/icon-equipment.svg");
+}
+
+.card-item:nth-child(4)::after {
+  background-image: url("../images/main/cards/card-icons/icon-sale.svg");
+}
+
+.card-item:nth-child(5)::after {
+  background-image: url("../images/main/cards/card-icons/icon-delivery.svg");
 }
 
 /*Ярлык новинки*/
