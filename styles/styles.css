@@ -826,6 +826,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 29px 30px;
+  align-items: start;
 }
 
 .result-item {
