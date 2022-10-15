@@ -945,7 +945,7 @@ body {
 /*Сервисы*/
 .services {
   margin-top: 52px;
-  padding-top: 52px;
+  padding: 52px 0 52px;
   background-color: #f5f8fa;
 }
 
@@ -1007,4 +1007,16 @@ body {
   color: #000000;
   max-width: 300px;
   margin: 20px 2px 18px;
+}
+
+/*Контакты*/
+.contacts-title {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.contacts-description {
+  
 }
