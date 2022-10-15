@@ -836,7 +836,7 @@ body {
 }
 
 .result-item.new-item {
-  background-image: linear-gradient(45deg, rgba(0,0,0,0) 89%, rgba(238,54,67,1) 89%, rgba(238,54,67,1) 96%, rgba(0,212,255,0) 96%);
+  background-image: linear-gradient(45deg, rgba(0,0,0,0) 89.7%, rgba(238,54,67,1) 89.7%, rgba(238,54,67,1) 96.3%, rgba(0,212,255,0) 96.3%);
 }
 
 .result-item.new-item::before {
@@ -874,4 +874,23 @@ body {
   background-color: #a9a9a9;
   top: 9px;
   left: 0;
+}
+
+.buy-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 2px;
+  border: none;
+  background-image: url("../images/main/catalog/buy-button.svg");
+  width: 139px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 9px 0 24px -2px;
+  padding: 0 14px 0 0;
 }
