@@ -1014,6 +1014,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 52px;
+  gap: 170px;
 }
 
 .left-column {
@@ -1043,3 +1044,9 @@ body {
   display: inline-block;
   margin: 51px 0 0 1px;
 }
+
+.map-link {
+  margin-top: 28px;
+  display: block;
+}
+
