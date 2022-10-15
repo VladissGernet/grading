@@ -941,3 +941,36 @@ body {
   border-radius: 2px;
   cursor: pointer;
 }
+
+/*Сервисы*/
+.services {
+  padding-top: 52px;
+  background-color: #f5f8fa;
+}
+
+.services-title {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.services-description {
+  margin: 30px auto 0;
+  text-align: center;
+  max-width: 556px;
+  font-size: 18px;
+}
+
+.service-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.service-item-description {
+  color: #000000;
+}
