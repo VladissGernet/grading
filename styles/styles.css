@@ -1010,13 +1010,16 @@ body {
 }
 
 /*Контакты*/
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .contacts-title {
+  grid-column: 1 / 2;
   font-family: "Fira Sans", sans-serif;
   font-size: 36px;
   line-height: 42px;
   text-transform: uppercase;
 }
 
-.contacts-description {
-  margin: 0;
-}
