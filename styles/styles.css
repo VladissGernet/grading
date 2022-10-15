@@ -1050,3 +1050,7 @@ body {
   display: block;
 }
 
+/*Футер*/
+.main-footer {
+  background-color: #32425c;
+}
