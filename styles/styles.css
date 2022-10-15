@@ -1013,13 +1013,33 @@ body {
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 52px;
+}
+
+.left-column {
+  margin-left: 1px;
+  max-width: 472px;
 }
 
 .contacts-title {
-  grid-column: 1 / 2;
   font-family: "Fira Sans", sans-serif;
   font-size: 36px;
   line-height: 42px;
   text-transform: uppercase;
+  margin: 0;
 }
 
+.contacts-description {
+  margin: 26px 0 0;
+}
+
+.contacts-description:first-of-type {
+  margin: 22px 0 0;
+}
+
+.contacts-button {
+  text-decoration: none;
+  min-width: 194px;
+  display: inline-block;
+  margin: 51px 0 0 1px;
+}
