@@ -944,8 +944,39 @@ body {
 
 /*Сервисы*/
 .services {
+  margin-top: 52px;
   padding-top: 52px;
   background-color: #f5f8fa;
+}
+
+.service-list {
+  list-style-type: none;
+  margin: 65px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 30px;
+}
+
+.service-item {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: top 30px left 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding: 26px 24px;
+}
+
+.service-item:nth-child(1) {
+  background-image: url("../images/main/services/icon-delivery.svg");
+}
+
+.service-item:nth-child(2) {
+  background-image: url("../images/main/services/icon-sale.svg");
+}
+
+.service-item:nth-child(3) {
+  background-image: url("../images/main/services/icon-materials.svg");
 }
 
 .services-title {
@@ -969,8 +1000,11 @@ body {
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+  margin: 141px 0 0;
 }
 
 .service-item-description {
   color: #000000;
+  max-width: 300px;
+  margin: 20px 2px 18px;
 }
