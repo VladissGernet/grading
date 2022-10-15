@@ -906,6 +906,7 @@ body {
   display: flex;
   gap: 17px;
   justify-content: center;
+  align-items: start;
   margin: 31px 20px 0 72px;
 }
 
