@@ -1013,7 +1013,7 @@ body {
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 52px;
+  margin: 52px auto 45px;
   gap: 170px;
 }
 
