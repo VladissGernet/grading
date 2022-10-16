@@ -1055,6 +1055,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #32425c;
+  gap: 220px;
 }
 
 .footer-logo {
