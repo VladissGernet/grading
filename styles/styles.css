@@ -1056,6 +1056,7 @@ body {
 }
 
 .footer-logo {
+  margin-bottom: 22px;
   width: 224px;
   height: 55px;
 }
@@ -1068,22 +1069,33 @@ body {
 .footer-number {
   text-decoration: none;
   color: #f3f7f9;
+  margin-top: 1px;
+  display: inline-block;
 }
 
 /*Social*/
 .social-link {
   display: block;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 36px;
-  height: 36px;
+  width: 33px;
+  height: 32px;
   box-sizing: border-box;
   border-radius: 50%;
 }
 
+.social-icon {
+  margin: -1px 0 0 -1px;
+}
+
+.vsco-icon {
+  margin: 0;
+}
+
 .social-list {
   list-style-type: none;
-  margin: 0;
+  margin: 22px 1px 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  gap: 5px;
 }
