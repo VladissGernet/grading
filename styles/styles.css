@@ -120,7 +120,7 @@ body {
   color: #293449;
   text-decoration: none;
   letter-spacing: 2px;
-  margin: 14px 3px 0 28px;
+  margin: 13px 3px 0 28px;
   padding-left: 30px;
   max-width: 174px;
   position: relative;
@@ -907,7 +907,7 @@ body {
   gap: 17px;
   justify-content: center;
   align-items: start;
-  margin: 31px 20px 0 72px;
+  margin: 30px 20px 0 72px;
 }
 
 .catalog-pagination-list {
@@ -1013,7 +1013,7 @@ body {
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 52px auto 45px;
+  margin: 52px auto 46px;
   gap: 170px;
 }
 
