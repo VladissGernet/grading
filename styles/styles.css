@@ -1124,5 +1124,39 @@ body {
 
 .subscribe-description  {
   color: #ffffff;
-  margin: 29px 0 0;
+  margin: 29px 0 1px;
+}
+
+/*Форма подписки*/
+.subscribe-form {
+  display: flex;
+  max-height: 57px;
+}
+
+.field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  min-width: 220px;
+  height: 40px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #63a63e;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  padding: 10px 16px 12px;
+}
+
+.field::placeholder {
+  color: #bdbdbd;
+}
+
+.subscribe-button {
+  background-color: #63a63e;
+  border: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 40px;
+  height: 100%;
+  padding-top: 3px;
 }
