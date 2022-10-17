@@ -1008,6 +1008,11 @@ body {
   opacity: 0.2;
 }
 
+.control-input[type="checkbox"]:focus-visible + .control-mark {
+  outline: 3px solid #3d546f;
+  outline-offset: 3px;
+}
+
   /*Питание*/
 .power-supply-radio {
   margin: 32px 0 0 -1px;
@@ -1055,6 +1060,11 @@ body {
   border-radius: 50%;
   top: 5px;
   left: 5px;
+}
+
+.power-supply-input[type="radio"]:focus-visible + .control-mark-radio {
+  outline: 3px solid #3d546f;
+  outline-offset: 3px;
 }
 
 /*Кнопка фильтра*/
