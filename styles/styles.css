@@ -1251,7 +1251,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 0 220px;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .footer-logo {
@@ -1282,6 +1282,7 @@ body {
   position: relative;
 }
 
+/*Лучшее расположение иконок*/
 .social-link::before {
   position: absolute;
   content: "";
@@ -1383,7 +1384,7 @@ body {
 }
 
 .copyright {
-  margin: 0 0 0 -1px;
+  margin: 0 0 0 1px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
