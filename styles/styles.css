@@ -1220,6 +1220,7 @@ body {
   background-color: #63a63e;
   width: 135px;
   padding: 11px 0 11px 14px;
+  display: none;
 }
 
 .green-buy-button::before {
@@ -1242,6 +1243,19 @@ body {
   border: 2px solid #63a63e;
   border-radius: 2px;
   box-sizing: border-box;
+  display: none;
+}
+
+.result-link:hover .product-picture {
+  opacity: 0.1;
+}
+
+.result-link:hover .green-buy-button {
+  display: block;
+}
+
+.result-link:hover .to-favorites {
+  display: block;
 }
 
   /*Пагинация*/
