@@ -247,11 +247,11 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 145px);
   grid-template-areas:
-"title title"
-"login login"
-"password password"
-"checkbox forgot-password"
-"sign-in sign-up";
+    "title title"
+    "login login"
+    "password password"
+    "checkbox forgot-password"
+    "sign-in sign-up";
   gap: 5px;
   width: 360px;
   box-sizing: border-box;
