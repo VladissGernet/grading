@@ -241,16 +241,44 @@ body {
 
 .login-popover {
   position: absolute;
-  background-color: #fcfcfc;
-  border-radius: 4px;
-  padding: 48px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
-  width: 420px;
+  width: 360px;
   box-sizing: border-box;
-  right: 0;
-  top: 40px;
   z-index: 1;
+  right: 0;
+  top: 0;
+}
+
+.popover-title {
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+}
+
+.text-field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding: 8px 14px 12px;
+  border: 1px solid #c5c5c5;
+  border-radius: 2px;
+}
+
+.text-field::placeholder {
+  color: #000000;
+}
+
+.login-link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .popover-is-closed {
