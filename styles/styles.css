@@ -411,6 +411,10 @@ body {
   background-image: url("../images/main/cards/card-icons/icon-delivery.svg");
 }
 
+.card-item .card-button {
+  z-index: 1;
+}
+
 /*Ярлык новинки*/
 .new-item {
   position: relative;
