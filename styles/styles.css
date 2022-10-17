@@ -266,10 +266,11 @@ body {
   gap: 7px 5px;
   width: 360px;
   box-sizing: border-box;
-  z-index: 1;
+  z-index: 2;
   right: 3px;
   top: 11px;
-  padding: 20px 22px 20px 32px;
+  padding: 20px 22px 36px 32px;
+  align-items: start;
 }
 
 .popover-title {
@@ -307,6 +308,13 @@ body {
 
 .login-popover .control-checkbox {
   grid-area: checkbox;
+  margin-top: 5px;
+  padding-left: 29px;
+}
+
+.login-popover .login-link {
+  margin-top: 5px;
+  margin-left: 3px;
 }
 
 .text-field::placeholder {
@@ -322,9 +330,23 @@ body {
 }
 
 .login-sign-in-button {
+  position: relative;
   background-color: #63a63e;
   border-radius: 2px;
   grid-area: sign-in;
+  margin-top: 33px;
+  padding: 12px 0 10px 19px;
+}
+
+.login-sign-in-button::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("/images/header/login.svg");
+  background-repeat: no-repeat;
+  left: 23px;
+  top: 11px;
 }
 
 .login-sign-up-button {
@@ -334,6 +356,8 @@ body {
   text-decoration: none;
   text-align: center;
   grid-area: sign-up;
+  margin-top: 33px;
+  padding: 10px 0px 8px 0px;
 }
 
 .popover-is-closed {
