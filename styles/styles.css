@@ -1137,9 +1137,7 @@ body {
 }
 
 .result-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
   border: 1px solid #eaeaea;
   border-radius: 2px;
   box-sizing: border-box;
@@ -1156,6 +1154,13 @@ body {
   right: 6px;
 }
 
+.result-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .product-picture {
   margin-top: 27px;
   z-index: -1;
@@ -1166,6 +1171,7 @@ body {
   line-height: 26px;
   text-align: center;
   margin: 14px 40px 0;
+  color: #293449;
 }
 
 .old-price {
@@ -1175,7 +1181,7 @@ body {
   line-height: 18px;
   letter-spacing: 2px;
   color: #a9a9a9;
-  margin: 15px 3px 0;
+  margin: 14px 3px 0;
 }
 
 .middle-line::before {
@@ -1189,6 +1195,8 @@ body {
 }
 
 .buy-button {
+  position: absolute;
+  bottom: 24px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1203,11 +1211,40 @@ body {
   background-repeat: no-repeat;
   background-color: transparent;
   cursor: pointer;
-  margin: auto 0 24px -2px;
   padding: 0 14px 0 0;
 }
 
-/*Пагинация*/
+.green-buy-button {
+  position: absolute;
+  top: 81px;
+  background-color: #63a63e;
+  width: 135px;
+  padding: 11px 0 11px 14px;
+}
+
+.green-buy-button::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 22px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/main/catalog/card-cart.svg");
+}
+
+.to-favorites {
+  position: absolute;
+  top: 129px;
+  width: 135px;
+  padding: 9px 0 9px 0;
+  background-color: #ffffff;
+  color: #32425c;
+  border: 2px solid #63a63e;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+  /*Пагинация*/
 .pagination-container {
   display: flex;
   gap: 17px;
