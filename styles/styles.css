@@ -1275,10 +1275,21 @@ body {
 /*Social*/
 .social-link {
   display: block;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 33px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   box-sizing: border-box;
+  border-radius: 50%;
+  position: relative;
+}
+
+.social-link::before {
+  position: absolute;
+  content: "";
+  width: 34px;
+  height: 34px;
+  background-color: rgba(255, 255, 255, 0.1);
+  top: 0;
+  left: 0;
   border-radius: 50%;
 }
 
@@ -1287,7 +1298,7 @@ body {
 }
 
 .vsco-icon {
-  margin: 0;
+  margin: 1px 0 0 1px;
 }
 
 .social-list {
@@ -1296,7 +1307,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 1px;
 }
 
 /*Правая колонка*/
