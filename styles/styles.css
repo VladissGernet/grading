@@ -281,6 +281,19 @@ body {
   text-decoration: none;
 }
 
+.login-sign-in-button {
+  background-color: #63a63e;
+  border-radius: 2px;
+}
+
+.login-sign-up-button {
+  color: #32425c;
+  border: 2px solid #63a63e;
+  border-radius: 2px;
+  text-decoration: none;
+  text-align: center;
+}
+
 .popover-is-closed {
   /*display: none;*/
 }
