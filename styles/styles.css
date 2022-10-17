@@ -361,7 +361,7 @@ body {
 }
 
 .popover-is-closed {
-  /*display: none;*/
+  display: none;
 }
 
 
