@@ -1133,6 +1133,15 @@ body {
   padding: 7px 28px 7px 14px;
 }
 
+.select-control:hover {
+  border-color: #63a63e;
+}
+
+.select-control:focus-visible {
+  border-color: #63a63e;
+  outline: 1px solid #ffbf47;
+}
+
 /*Результат поиска*/
 .search-result {
   grid-area: result;
