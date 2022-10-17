@@ -619,12 +619,24 @@ body {
 
 .inner-slider-item {
   min-height: 390px;
-  background-image: url("../images/main/cards/slider/dreels.jpg");
   background-repeat: no-repeat;
-  background-size: 910px 390px;
-  background-position: -70px;
+  background-size: cover;
+  display: none;
 }
 
+/*Защита от переполнения слайдов*/
+.inner-slider-item:first-child {
+  display: block;
+}
+
+/*Слайды*/
+.slide-1 {
+  background-image: url("../images/main/cards/slider/slide-1.jpg");
+}
+
+.slide-2 {
+  background-image: url("../images/main/cards/slider/slide-2.jpg");
+}
 
 .inner-card-title {
   font-family: "Fira Sans",sans-serif;
