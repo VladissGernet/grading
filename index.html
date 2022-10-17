@@ -39,7 +39,36 @@
           </form>
         </div>
 
-        <button class="general-button login-button" type="button">Войти</button>
+        <div class="login-container">
+          <button class="general-button login-button" type="button">Войти</button>
+          <form class="login-popover popover-is-closed" action="https://echo.htmlacademy.ru/" method="post">
+            <h2 class="popover-title">Личный кабинет</h2>
+
+<!--            Поле логина-->
+            <label class="login-field">
+              <input class="login-input text-field" type="text" placeholder="Логин" required>
+            </label>
+
+<!--            Поле пароля-->
+            <label class="password-field">
+              <input class="password-input text-field" type="password" placeholder="Пароль" required>
+            </label>
+
+<!--            Чекбокс-->
+            <label class="control-checkbox">
+              <input class="visually-hidden control-input" type="checkbox" name="remember me" checked="">
+              <span class="control-mark"></span>
+              Запомнить меня
+            </label>
+
+<!--            Кнопки и ссылки-->
+            <a class="login-link" href="#">Забыли пароль?</a>
+            <a class="login-link" href="#">Регистрация</a>
+            <button class="login-sign-in-button" type="submit">Войти</button>
+            <a class="login-sign-up-button" href="#">Регистрация</a>
+
+          </form>
+        </div>
 
       </div>
 

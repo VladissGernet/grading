@@ -219,6 +219,7 @@ body {
   color: #f1f5f7;
   background-color: transparent;
   position: relative;
+  margin-top: 12px;
   padding: 2px 2px 0 27px;
   max-width: 100px;
 }
@@ -232,6 +233,30 @@ body {
   background-repeat: no-repeat;
   left: 0;
 }
+
+/*Окно логина*/
+.login-container {
+  position: relative;
+}
+
+.login-popover {
+  position: absolute;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  box-sizing: border-box;
+  right: 0;
+  top: 40px;
+  z-index: 1;
+}
+
+.popover-is-closed {
+  /*display: none;*/
+}
+
 
 /*Навигация*/
 .header-navigation {
