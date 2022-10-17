@@ -1209,7 +1209,7 @@ body {
 
 .buy-button {
   position: absolute;
-  bottom: 24px;
+  bottom: 26px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1218,13 +1218,37 @@ body {
   text-align: center;
   letter-spacing: 2px;
   border: none;
-  background-image: url("../images/main/catalog/buy-button.svg");
   width: 139px;
   height: 40px;
   background-repeat: no-repeat;
   background-color: transparent;
   cursor: pointer;
   padding: 0 14px 0 0;
+}
+
+.buy-button-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  fill: #ee3643;
+}
+
+.buy-button:hover .buy-button-background {
+  fill: #ca2c37;
+}
+
+.buy-button:active .buy-button-background {
+  fill: #ba2732;
+}
+
+.buy-button:focus-visible {
+  outline: none;
+}
+
+.buy-button:focus-visible .buy-button-background {
+  stroke: #000000;
+  stroke-width: 2px;
 }
 
 .green-buy-button {
@@ -1297,7 +1321,7 @@ body {
 }
 
 .result-link:hover {
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
   /*Пагинация*/
