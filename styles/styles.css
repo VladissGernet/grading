@@ -888,6 +888,18 @@ body {
   position: absolute;
 }
 
+.range-toggle:hover {
+  background-color: #518534;
+}
+
+.range-toggle:active {
+  background-color: #5fbb2d;
+}
+
+.range-toggle:focus-visible {
+  background-color: #518534;
+}
+
 .toggle-min {
   top: -8px;
   left: -8px;
