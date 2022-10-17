@@ -360,10 +360,6 @@ body {
   padding: 10px 0 8px 0;
 }
 
-.popover-is-closed {
-  display: none;
-}
-
 /*Окно пользователя*/
 .account-popover {
   position: absolute;
@@ -406,6 +402,11 @@ body {
 
 .account-popover .popover-title {
   margin: 0 0 36px 0;
+}
+
+/*Закрытие поповера*/
+.popover-is-closed {
+  display: none;
 }
 
 /*Навигация*/
