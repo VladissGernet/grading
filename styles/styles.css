@@ -79,6 +79,17 @@ body {
   padding-right: 115px;
 }
 
+/*Текстовое поле*/
+.text-field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding: 8px 14px 12px;
+  border: 1px solid #c5c5c5;
+  border-radius: 2px;
+}
+
 /*Header*/
 .store-contacts-background {
   background-color: #f3f7f9;
@@ -252,19 +263,20 @@ body {
     "password password"
     "checkbox forgot-password"
     "sign-in sign-up";
-  gap: 5px;
+  gap: 7px 5px;
   width: 360px;
   box-sizing: border-box;
   z-index: 1;
-  right: 0;
-  top: 0;
+  right: 3px;
+  top: 11px;
+  padding: 20px 22px 20px 32px;
 }
 
 .popover-title {
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
+  margin: 0 0 42px 0;
   grid-area: title;
 }
 
@@ -275,12 +287,18 @@ body {
   padding: 0;
   width: 16px;
   height: 16px;
-  top: 0;
-  right: 0;
+  top: 17px;
+  right: 19px;
+  cursor: pointer;
 }
 
 .login-field {
   grid-area: login;
+}
+
+.login-input, .password-input {
+  padding: 8px 12px 6px;
+  width: 273px;
 }
 
 .password-field {
@@ -289,16 +307,6 @@ body {
 
 .login-popover .control-checkbox {
   grid-area: checkbox;
-}
-
-.text-field {
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: #000000;
-  padding: 8px 14px 12px;
-  border: 1px solid #c5c5c5;
-  border-radius: 2px;
 }
 
 .text-field::placeholder {
