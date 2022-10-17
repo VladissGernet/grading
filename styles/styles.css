@@ -244,8 +244,15 @@ body {
   background-color: #ffffff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 145px);
+  grid-template-areas:
+"title title"
+"login login"
+"password password"
+"checkbox forgot-password"
+"sign-in sign-up";
+  gap: 5px;
   width: 360px;
   box-sizing: border-box;
   z-index: 1;
@@ -258,14 +265,30 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
+  grid-area: title;
 }
 
 .close-popover-button {
+  position: absolute;
   background-color: transparent;
   border: none;
   padding: 0;
   width: 16px;
   height: 16px;
+  top: 0;
+  right: 0;
+}
+
+.login-field {
+  grid-area: login;
+}
+
+.password-field {
+  grid-area: password;
+}
+
+.login-popover .control-checkbox {
+  grid-area: checkbox;
 }
 
 .text-field {
@@ -287,11 +310,13 @@ body {
   line-height: 18px;
   color: #000000;
   text-decoration: none;
+  grid-area: forgot-password;
 }
 
 .login-sign-in-button {
   background-color: #63a63e;
   border-radius: 2px;
+  grid-area: sign-in;
 }
 
 .login-sign-up-button {
@@ -300,6 +325,7 @@ body {
   border-radius: 2px;
   text-decoration: none;
   text-align: center;
+  grid-area: sign-up;
 }
 
 .popover-is-closed {
