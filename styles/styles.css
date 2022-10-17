@@ -772,6 +772,18 @@ body {
   z-index: 1;
 }
 
+.inner-slider-button:hover {
+  background-color: #ca2c37;
+}
+
+.inner-slider-button:active {
+  background-color: #ba2732;
+}
+
+.inner-slider-button:focus-visible {
+  outline: 2px solid #ffffff;
+}
+
 /*Пагинация слайдера*/
 .slider-pagination {
   list-style-type: none;
