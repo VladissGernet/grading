@@ -965,6 +965,10 @@ body {
   padding-left: 35px;
 }
 
+.control-checkbox:active {
+  color: rgba(0, 0, 0, 0.4);
+}
+
 .control-mark {
   position: absolute;
   top: 0;
@@ -975,6 +979,15 @@ body {
   border-radius: 2px;
   box-sizing: border-box;
 }
+
+.control-checkbox:hover .control-mark {
+  border-color: rgba(50, 66, 92, 0.6);
+}
+
+.control-checkbox:active .control-mark {
+  border-color: rgba(50, 66, 92, 0.2);
+}
+
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
@@ -987,7 +1000,15 @@ body {
   left: -2px;
 }
 
-/*Питание*/
+.control-input[type="checkbox"]:hover:checked + .control-mark::before {
+  opacity: 0.6;
+}
+
+.control-input[type="checkbox"]:active:checked + .control-mark::before {
+  opacity: 0.2;
+}
+
+  /*Питание*/
 .power-supply-radio {
   margin: 32px 0 0 -1px;
 }
@@ -1008,6 +1029,10 @@ body {
   position: relative;
   cursor: pointer;
   padding-left: 35px;
+}
+
+.power-supply-label:active {
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .control-mark-radio {
