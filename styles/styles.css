@@ -475,13 +475,28 @@ body {
   padding: 20px 22px 21px;
 }
 
+.navigation-link-button:hover {
+  background-color: #32425c;
+  color: #c5c5c5;
+}
+
+.navigation-link-button:active {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.navigation-link-button:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: -8px;
+}
+
 .navigation-user {
-  margin: 23px 27px 0;
+  margin: 23px 21px 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   justify-self: end;
-  gap: 25px;
+  gap: 16px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -491,6 +506,45 @@ body {
   border-radius: 4px;
   margin: 11px 0 12px;
   padding: 12px 12px;
+}
+
+/*Состояния кнопок*/
+.navigation-user-icon {
+  position: relative;
+  z-index: 0;
+  color: #ffffff;
+  opacity: 0.6;
+  padding: 5px;
+}
+
+.navigation-user-icon::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 23px);
+  height: calc(100% + 23px);
+  left: -12px;
+  top: -15px;
+  z-index: -1;
+}
+
+.navigation-user-icon:hover {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-user-icon:hover::before {
+  background-color: #32425c;
+}
+
+.navigation-user-icon:active {
+  color: rgba(255, 255, 255, 1);
+}
+
+.navigation-user-icon:focus-visible {
+  outline: none;
+}
+
+.navigation-user-icon:focus-visible::before {
+  outline: 2px solid #ffffff;
 }
 
 /*Карточки навигации*/
