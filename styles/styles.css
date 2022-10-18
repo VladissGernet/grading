@@ -237,6 +237,16 @@ body {
   color: #ffffff;
 }
 
+.search-field:focus {
+  background-color: #f1f5f7;
+  color: #293449;
+  outline: none;
+}
+
+.search-field:focus::placeholder {
+  color: #293449;
+}
+
 /*Общая кнопка*/
 .general-button {
   font-family: "PT Sans", sans-serif;
