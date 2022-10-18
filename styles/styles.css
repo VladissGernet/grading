@@ -809,7 +809,7 @@ body {
 }
 
 .red-button:focus-visible {
-  outline: 3px solid #63a63e;
+  outline: 3px solid #000000;
 }
 
 .inner-slider-button {
@@ -1304,7 +1304,7 @@ body {
   background-color: #63a63e;
   width: 135px;
   padding: 11px 0 12px 19px;
-  display: none;
+  z-index: -2;
 }
 
 .green-buy-button:hover {
@@ -1316,7 +1316,7 @@ body {
 }
 
 .green-buy-button:focus-visible {
-  outline: 2px solid #ffffff;
+  outline: 3px solid #000000;
 }
 
 .green-buy-button::before {
@@ -1340,7 +1340,7 @@ body {
   border: 2px solid #63a63e;
   border-radius: 2px;
   box-sizing: border-box;
-  display: none;
+  z-index: -2;
 }
 
 .to-favorites:hover {
@@ -1353,7 +1353,7 @@ body {
 }
 
 .to-favorites:focus-visible {
-  outline: 2px solid #ffffff;
+  outline: 3px solid #000000;
 }
 
 .result-link:hover .product-picture {
@@ -1361,20 +1361,34 @@ body {
 }
 
 .result-link:hover .green-buy-button {
-  display: block;
+  z-index: 1;
 }
 
 .result-link:hover .to-favorites {
-  display: block;
+  z-index: 1;
 }
 
 .result-link:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+.result-link:focus-within .product-picture {
+  opacity: 0.1;
+}
+
+.result-link:focus-within .green-buy-button {
+  z-index: 1;
+}
+
+.result-link:focus-within .to-favorites {
+  z-index: 1;
+}
+
+
+
 .result-link:focus-visible {
   outline: 2px solid black;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
   /*Пагинация*/
