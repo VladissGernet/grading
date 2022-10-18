@@ -295,6 +295,8 @@ body {
   position: relative;
   margin: 0 7px 0 0;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
 }
 
 .account-button::before {
@@ -308,17 +310,18 @@ body {
 }
 
 .sign-out-button {
-  margin: 4px -4px 0 0;
-  padding: 18px;
+  margin: -5px -4px 0 0;
+  padding: 18px 10px;
   border: none;
   background-color: transparent;
   width: 16px;
   height: 16px;
-  background-image: url("../images/header/login.svg");
+  background-image: url(../images/header/login.svg);
   background-repeat: no-repeat;
   background-position: top 50% right 50%;
   transform: rotate(180deg);
   cursor: pointer;
+  display: block;
 }
 
 /*Прячет кнопки авторизованного пользователя*/
