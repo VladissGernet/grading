@@ -605,11 +605,11 @@ body {
   background-image: url("../images/main/cards/card-icons/icon-equipment.svg");
 }
 
-.card-item:nth-child(4)::after {
+.card-item:nth-child(5)::after {
   background-image: url("../images/main/cards/card-icons/icon-sale.svg");
 }
 
-.card-item:nth-child(5)::after {
+.card-item:nth-child(6)::after {
   background-image: url("../images/main/cards/card-icons/icon-delivery.svg");
 }
 
@@ -648,7 +648,7 @@ body {
   background-color: #dc91d8;
 }
 
-.card-item:nth-child(4) {
+.card-item:nth-child(5) {
   background-color: #8ed78f;
 }
 
@@ -1190,7 +1190,7 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 29px 30px;
+  gap: 27px 30px;
   align-items: start;
 }
 
@@ -1255,7 +1255,7 @@ body {
 
 .buy-button {
   position: absolute;
-  bottom: 26px;
+  bottom: 25px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1299,10 +1299,11 @@ body {
 
 .green-buy-button {
   position: absolute;
-  top: 81px;
+  top: 66px;
+  left: 71px;
   background-color: #63a63e;
   width: 135px;
-  padding: 11px 0 11px 14px;
+  padding: 11px 0 12px 19px;
   display: none;
 }
 
@@ -1330,7 +1331,8 @@ body {
 
 .to-favorites {
   position: absolute;
-  top: 129px;
+  top: 117px;
+  left: 71px;
   width: 135px;
   padding: 9px 0 9px 0;
   background-color: #ffffff;
