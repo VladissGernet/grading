@@ -580,11 +580,18 @@ body {
 
 /*Состояния кнопок*/
 .navigation-user-icon {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
   position: relative;
   z-index: 0;
   color: #ffffff;
-  opacity: 0.6;
   padding: 5px;
+  text-decoration: none;
+}
+
+.navigation-user-icon svg {
+  opacity: 0.6;
 }
 
 .navigation-user-icon::before {
@@ -595,6 +602,18 @@ body {
   left: -12px;
   top: -15px;
   z-index: -1;
+}
+
+/*Количество закладок и товаров в корзине*/
+.user-value {
+  margin: 0 4px 0 2px;
+  position: relative;
+  top: -6px;
+  display: none;
+}
+
+.goods-value {
+  margin: 0 10px 0 0;
 }
 
 .navigation-user-icon:hover {
