@@ -140,12 +140,24 @@ body {
 .store-number::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   background-image: url("/images/header/number-icon.svg");
   background-repeat: no-repeat;
   top: 0;
   left: 6px;
+}
+
+.store-number:hover {
+  opacity: 0.6;
+}
+
+.store-number:active {
+  opacity: 0.2;
+}
+
+.store-number:focus-visible {
+  outline: 3px solid #ffbf47;
 }
 
 /*Строка с логотипом*/
@@ -672,6 +684,19 @@ body {
   background-repeat: no-repeat;
 }
 
+.card-button:hover {
+  opacity: 0.6;
+}
+
+.card-button:active {
+  opacity: 0.3;
+}
+
+.card-button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
 /*Слайдер*/
 .slider-item {
   grid-column: 1 / span 2;
@@ -747,7 +772,19 @@ body {
   transform: rotate(180deg);
 }
 
-/*Общая красная кнопка*/
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:active {
+  opacity: 0.3;
+}
+
+.slider-button:focus-visible {
+  outline: 3px solid #ffffff;
+}
+
+  /*Общая красная кнопка*/
 .red-button {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
