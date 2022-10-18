@@ -234,7 +234,7 @@ body {
 }
 
 .search-field:focus::placeholder {
-  color: #293449;
+  color: #c5c5c5;
 }
 
 .search-form-label {
