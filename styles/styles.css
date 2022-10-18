@@ -210,17 +210,6 @@ body {
   position: relative;
 }
 
-.search-form::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("/images/header/search.svg");
-  background-repeat: no-repeat;
-  top: 11px;
-  left: 21px;
-}
-
 .search-field {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -231,6 +220,7 @@ body {
   box-sizing: border-box;
   padding: 0 0 4px 53px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .search-field::placeholder {
@@ -245,6 +235,20 @@ body {
 
 .search-field:focus::placeholder {
   color: #293449;
+}
+
+.search-form-label {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  cursor: pointer;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.search-field:focus + .search-form-label {
+  color: #405069;
+  opacity: 1;
 }
 
 /*Общая кнопка*/
