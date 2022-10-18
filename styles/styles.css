@@ -255,7 +255,7 @@ body {
   color: #f1f5f7;
   background-color: transparent;
   position: relative;
-  margin-top: 12px;
+  margin-top: 1px;
   padding: 2px 2px 0 27px;
   max-width: 100px;
   display: none;
@@ -306,6 +306,11 @@ body {
   background-position: top 50% right 50%;
   transform: rotate(180deg);
   cursor: pointer;
+}
+
+/*Прячет кнопки авторизованного пользователя*/
+.hide-button {
+  /*display: none;*/
 }
 
 /*Окно логина*/
