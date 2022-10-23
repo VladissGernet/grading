@@ -1295,6 +1295,10 @@ body {
   box-sizing: border-box;
   width: 270px;
   min-height: 380px;
+  padding-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .result-item.new-item {
@@ -1307,11 +1311,45 @@ body {
 }
 
 .result-link {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 380px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+
+.result-link:focus ~ .item-hidden-buttons {
+  display: block;
+}
+
+.result-link:focus ~ .product-picture {
+  opacity: 0.1;
+}
+
+.item-hidden-buttons {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.result-item:hover .item-hidden-buttons {
+  display: block;
+}
+
+.result-item:hover .product-picture {
+  opacity: 0.1;
+}
+
+.result-item:focus-within .item-hidden-buttons {
+  display: block;
+}
+
+.result-item:focus-within .product-picture {
+  opacity: 0.1;
 }
 
 .product-picture {
@@ -1364,6 +1402,7 @@ body {
   background-color: transparent;
   cursor: pointer;
   padding: 0 14px 0 0;
+  z-index: 1;
 }
 
 .buy-button-background {
@@ -1398,7 +1437,6 @@ body {
   background-color: #63a63e;
   width: 135px;
   padding: 11px 0 12px 19px;
-  z-index: -2;
 }
 
 .green-buy-button:hover {
@@ -1434,7 +1472,6 @@ body {
   border: 2px solid #63a63e;
   border-radius: 2px;
   box-sizing: border-box;
-  z-index: -2;
 }
 
 .to-favorites:hover {
@@ -1449,36 +1486,6 @@ body {
 .to-favorites:focus-visible {
   outline: 3px solid #000000;
 }
-
-.result-link:hover .product-picture {
-  opacity: 0.1;
-}
-
-.result-link:hover .green-buy-button {
-  z-index: 1;
-}
-
-.result-link:hover .to-favorites {
-  z-index: 1;
-}
-
-.result-link:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.result-link:focus-within .product-picture {
-  opacity: 0.1;
-}
-
-.result-link:focus-within .green-buy-button {
-  z-index: 1;
-}
-
-.result-link:focus-within .to-favorites {
-  z-index: 1;
-}
-
-
 
 .result-link:focus-visible {
   outline: 2px solid black;
