@@ -714,6 +714,8 @@ body {
 /*Ярлык новинки*/
 .new-item {
   position: relative;
+  background-size: 270px 380px;
+  background-repeat: no-repeat;
   background-image:
     linear-gradient(45deg, rgba(0,0,0,0) 88%, rgba(238,54,67,1) 88%, rgba(238,54,67,1) 95.5%, rgba(0,212,255,0) 95.5%)
 }
