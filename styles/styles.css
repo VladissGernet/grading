@@ -1399,16 +1399,6 @@ body {
   margin: 14px 3px 0;
 }
 
-.middle-line::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #a9a9a9;
-  top: 9px;
-  left: 0;
-}
-
 .buy-button {
   position: absolute;
   bottom: 25px;
